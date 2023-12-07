@@ -200,7 +200,7 @@ body {
 #side-menu {
   margin-top: 75px;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   left: -100vw;
   height: 100vh;
   width: 100vw;
@@ -522,6 +522,7 @@ body {
   transition: 0.5s;
   border: none;
   border-radius: 8px;
+  margin: 1em;
 }
 
 .btn-form:hover {
@@ -635,9 +636,9 @@ body {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 20px;
-  width: 300px;
-  height: 400px;
+  right: 0px;
+  width: 100vw;
+  height: 60vh;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
@@ -688,7 +689,7 @@ body {
 }
 
 #chat-icon {
-  color: #444;
+  color: #d4a373;
 }
 /* ------------------------------------ LogIn -------------------------------------------- */
 
@@ -728,6 +729,7 @@ body {
 }
 
 .btn-a {
+  margin: 1em;
   text-decoration: none;
   color: #000;
   padding-top: 1.1em;
@@ -797,6 +799,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .banner h1{
+    font-size: 1em;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   table tr {
     display: flex;
@@ -813,6 +821,12 @@ body {
   #popup {
     width: 90vw;
     height: 100vw;
+  }
+
+  .chat-content {
+    right: 20px;
+    width: 30vw;
+    height: 70vh;
   }
 }
 

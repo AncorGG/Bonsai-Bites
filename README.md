@@ -10,24 +10,31 @@
 
 # Project Info
 
-Welcome to the Bonsai Bites web page, it's about a simulated restaurant that sells asiatic cuisine as a practice of html, css and js.
-
+Welcome to the new Bonsai Bites web page, it's about a simulated restaurant that sells asiatic cuisine as part of html, css and js practice.
 ## Table of Contents
 
 - [Features](#newfeatures)
-- [Installation](#installation)
+- [Work In Progress](#featuresonqueue)
 - [Tools](#tools)
 - [Acknowledgments](#acknowledgments)
 - [References](#references)
 
 # New Features
+ 
+Apart from the ones added onto the base proyect which you can visit [Here](https://github.com/AncorGG/BonsaiBites).
 
-- **Menu page Open** A whole new page that introduces many diferent functions.
-- **Order Form** A form that displays all the items on the menu.
-- **Order Diplay** A display of the orders submited that is storaged on the local storage.
-- **New Cards Function** A new button on the cards that adds the item to the order's list.
-- **Edit Buttons** 'Modify' and 'Delete' buttons added onto the table's registers.
-- **Modify popup** Modify function comes with it's own popup form to update the register.
+- **User Registration** Using the 'LocalStorage', create your own account.
+- **Log In** Basic Login System using 'SessionStorage' to mantain the logged status.
+- **Order Save** Orders are now saved on the 'LocalStorage' in order to be mantained.
+- **Scroll Animations** New animations given to the cards on scroll.
+- **Chat popup** Chat function using the login system.(WIP) - Refer to [features on queue](#featuresonqueue).
+
+# Features On Queue
+
+These are some of the features that are being worked on at the moment.
+
+- **FireBase Upload** Uploading the proyect to Firebase.
+- **Valid Chat** Using the Firebase tools, make the chat function usable.
 
 ## Installation
 
@@ -46,8 +53,9 @@ Get started with our project by following these simple steps:
 
 - [Coolors](https://coolors.co/visualizer/fefae0-faedcd-d4a373-463f3a-f7567c-4ed1d1) - Color pallete creation.
 
-- [Bootstrap 5](https://getbootstrap.com) - CSS / JS gallery
+- [Bootstrap 5](https://getbootstrap.com) - CSS / JS gallery.
 
+- [Scroll Animations](https://alvarotrigo.com/blog/css-animations-scroll/) - Scroll Animations.
 
 ## Author
 
@@ -55,9 +63,9 @@ Get started with our project by following these simple steps:
 
 ## Acknowledgments
 
-- Dribble Artists for the inspiration
-- IES El Rincon teachers
-- Classmates' aid
+- Dribble Artists for the inspiration.
+- IES El Rincon teachers.
+- Classmates' assistance.
 
 ### References
 

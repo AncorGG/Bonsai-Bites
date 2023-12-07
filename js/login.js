@@ -30,10 +30,12 @@ function initialize() {
 
 //Open the chat log ---------------------
 function openChat() {
-    var chatContent = document.getElementById('chat-content');
-    chatContent.style.display = (chatContent.style.display === 'block') ? 'none' : 'block';
-    var chatBubble = document.getElementById('chat-bubble');
-    chatBubble.style.backgroundColor = (chatContent.style.display === 'block') ? "transparent" : "white";
+    const CHAT_CONTENT = document.getElementById('chat-content');
+    CHAT_CONTENT.style.display = (CHAT_CONTENT.style.display === 'block') ? 'none' : 'block';
+    const CHAT_BUBBLE = document.getElementById('chat-bubble');
+    CHAT_BUBBLE.style.backgroundColor = (CHAT_CONTENT.style.display === 'block') ? "#d4a373" : "white";
+    const CHAT_ICON = document.getElementById('chat-icon');
+    CHAT_ICON.style.color = (CHAT_CONTENT.style.display === 'block') ? "white" : "#d4a373";
 }
 
 function showMessages() {
