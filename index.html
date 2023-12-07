@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Bonsai Bites</title>
+</head>
+
+<body>
+  <!-- HEADER  -->
+  <div>
+
+    <div class="nav-container">
+      <h2 class="nav-link-i">
+        <i class="bi bi-gear-fill" id="side-icon" onclick="toggleSideMenu();"></i>
+      </h2>
+      <a href="index.html" class="nav-link">
+        <h1>Bonsai Bites</h1>
+      </a>
+      <a href="menu.html" class="nav-link">
+        <h2 class="nav-link-h2">Menu</h2>
+      </a>
+      <a href="menu.html" class="nav-icon"><i class="bi bi-bag"></i></a>
+    </div>
+    
+    <!-- SIDE MENU -->
+    
+    <div id="side-menu" class="">
+      <div>
+        <a href="#main-container" class="side-menu-txt">
+          <h1>Main Courses</h1>
+        </a>
+      </div>
+      <div>
+        <a href="#dessert-container" class="side-menu-txt">
+          <h1>Desserts</h1>
+        </a>
+      </div>
+      <div>
+        <a href="menu.html" class="side-menu-txt">
+          <h1>Coocking Classes</h1>
+        </a>
+      </div>
+      <div>
+        <a href="login.html" class="side-menu-txt">
+          <h1>Log In</h1>
+        </a>
+      </div>
+      <div>
+        <a href="#" class="side-menu-txt" onclick="logOut()">
+          <h1 class="side-menu-h">Log Out</h1>
+        </a>
+      </div>
+      <div>
+        <i class="bi bi-x-lg" id="x-side-menu" onclick="toggleSideMenu();"></i>
+      </div>
+    </div>
+    
+    <!--BODY-->
+    <div id="about-us" class="banner">
+      <div>
+        <h1>Bonsai Bites</h1>
+      </div>
+    </div>
+    
+    <div class="name-card">
+      <h1>- Main Course -</h1>
+    </div>
+    
+    <div id="main-container">
+      <div class="card reveal">
+        <div>
+          <img src="img/Pho.png" alt="Pho Plate">
+          <h1>Pho Plate</h1>
+        </div>
+        <div class="button-container">
+          <button class="card-button" onclick="addOrderFromCard(0)">
+            <i class="bi bi-cart-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div>
+          <img src="img/dim-sum.png" alt="Elegant Dim Sum">
+          <h1>Elegant Dim Sum</h1>
+        </div>
+        <div class="button-container">
+          <button class="card-button" onclick="addOrderFromCard(1)">
+            <i class="bi bi-cart-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div>
+          <img src="img/sweet-sour-noodles.png" alt="Sweet Sour Noodles">
+          <h1>Sweet Sour Noodles</h1>
+        </div>
+        <div class="button-container">
+          <button class="card-button" onclick="addOrderFromCard(2)">
+            <i class="bi bi-cart-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div>
+          <img src="img/meatball.png" alt="Meatball Plate">
+          <h1>Meatball Plate</h1>
+        </div>
+        <div class="button-container">
+          <button class="card-button" onclick="addOrderFromCard(3)">
+            <i class="bi bi-cart-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div>
+          <img src="img/congee.png" alt="Congee">
+          <h1>Congee</h1>
+        </div>
+        <div class="button-container">
+          <button class="card-button" onclick="addOrderFromCard(4)">
+            <i class="bi bi-cart-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div>
+          <img src="img/caramel-sushi.png" alt="Caramel Sushi">
+          <h1>Caramel Sushi</h1>
+        </div>
+        <div class="button-container">
+          <button class="card-button" onclick="addOrderFromCard(5)">
+            <i class="bi bi-cart-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div>
+          <img src="img/fried-rice.png" alt="Fried Rice">
+          <h1>Fried Rice</h1>
+        </div>
+        <div class="button-container">
+          <button class="card-button" onclick="addOrderFromCard(6)">
+            <i class="bi bi-cart-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div>
+          <img src="img/duck-pho.png" alt="Duck Pho">
+          <h1>Duck Pho</h1>
+        </div>
+        <div class="button-container">
+          <button class="card-button" onclick="addOrderFromCard(7)">
+            <i class="bi bi-cart-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div>
+          <img src="img/ration-sushi.png" alt="Big ration of Sushi">
+          <h1>Sushi</h1>
+        </div>
+        <div class="button-container">
+          <button class="card-button" onclick="addOrderFromCard(8)">
+            <i class="bi bi-cart-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div>
+          <img src="img/kimchi.png" alt="Kimchi">
+          <h1>Kimchi</h1>
+        </div>
+        <div class="button-container">
+          <button class="card-button" onclick="addOrderFromCard(9)">
+            <i class="bi bi-cart-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div>
+          <img src="img/fried-fish.png" alt="Fried Fish">
+          <h1>Fried Fish</h1>
+        </div>
+        <div class="button-container">
+          <button class="card-button" onclick="addOrderFromCard(10)">
+            <i class="bi bi-cart-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div>
+          <img src="img/stew-dim-sum.png" alt="Caramel Sushi">
+          <h1>Stew Dim Sum</h1>
+        </div>
+        <div class="button-container">
+          <button class="card-button" onclick="addOrderFromCard(11)">
+            <i class="bi bi-cart-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="info-card" id="slide">
+      <h1>- Desserts -</h1>
+      <div id="dessert-container">
+        <div id="dc-1" class="dessert-card -l reveal">
+          <img src="img/cream-berrys.png" alt="CreamBerrys">
+        </div>
+        <div id="dc-2" class="dessert-card -l reveal">
+          <img src="img/raspberry-cake.png" alt="CreamBerrys">
+        </div>
+        <div id="dc-3" class="dessert-card -r reveal">
+          <img src="img/pancake.png" alt="Pancake">
+        </div>
+        <div id="dc-4" class="dessert-card -r reveal">
+          <img src="img/cream-berrys.png" alt="CreamBerrys">
+        </div>
+        <div id="dc-5" class="dessert-card -l reveal">
+          <img src="img/pancake.png" alt="Pancake">
+        </div>
+        <div id="dc-6" class="dessert-card -l reveal">
+          <img src="img/cream-berrys.png" alt="CreamBerrys">
+        </div>
+        <div id="dc-7" class="dessert-card -r reveal">
+          <img src="img/raspberry-cake.png" alt="CreamBerrys">
+        </div>
+        <div id="dc-8" class="dessert-card -r reveal">
+          <img src="img/pancake.png" alt="Pancake">
+        </div>
+      </div>
+    </div>
+    
+    <div class="info-banner">
+      <div class="banner-text">
+        <h1>Special Courses</h1>
+        <p>
+          Do you want to learn how to prepare the finest dining experience? Join
+          our coureses!
+        </p>
+        <a href="https://www.facebook.com/" target="_blank" class="banner-button">Join Us</a>
+      </div>
+    </div>
+    
+    <!-- POP UP -->
+    
+    <div class="pop-btn">
+      <a class="btn-pop" onclick="popupToggle();">Contact Us</a>
+    </div>
+    
+    <div id="popup">
+      <div class="content">
+        <h2>Sumbit your feedback</h2>
+        <div class="inputBox">
+          <input type="email" placeholder="Enter email">
+        </div>
+        <div class="inputBox">
+          <input type="text" placeholder="Start Typing">
+        </div>
+        <div class="inputBox">
+          <input type="submit" value="Sign Up" onclick="popupToggle();">
+        </div>
+      </div>
+      <a class="close" onclick="popupToggle();"><i class="bi bi-x-lg"></i></a>
+    </div>
+    
+    <!-- Burbuja del chat -->
+    <div id="chat-bubble" class="chat-bubble">
+      <i class="bi bi-chat-fill" id="chat-icon"></i>
+    </div>
+    
+    <div id="chat-content" class="chat-content">
+    </div>
+    
+    <!--FOOTER-->
+    
+    <div id="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">Bonsai Bites</div>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com" target="_blank" class="social-links"><i class="bi bi-facebook"></i>
+                Facebook</a>
+              </li>
+              <li>
+                <a href="https://twitter.com" target="_blank" class="social-links"><i class="bi bi-twitter"></i>
+                  Twitter</a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com" target="_blank" class="social-links"><i class="bi bi-instagram"></i>
+                    Instagram</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-section">
+                <div class="footer-logo">Opening Hours</div>
+                <ul>
+                  <li>Monday - Friday: 11:00 AM - 10:00 PM</li>
+                  <li>Saturday - Sunday: 9:00 AM - 11:00 PM</li>
+                </ul>
+              </div>
+              <div class="footer-section">
+                <div class="footer-logo">Find Us</div>
+                <ul>
+                  <li>123 Main Street</li>
+                  <li>City, State ZIP</li>
+                  <li>Email: info@yourrestaurant.com</li>
+                  <li>Phone: (123) 456-7890</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <script src="js/login.js"></script>
+          <script src="js/script.js"></script>
+        </body>
+</html>

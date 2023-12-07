@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Bonsai Bites</title>
+</head>
+
+<body>
+  <!-- HEADER  -->
+
+  <div class="nav-container">
+    <h2 class="nav-link-i">
+      <i class="bi bi-gear-fill" id="side-icon" onclick="toggleSideMenu();"></i>
+    </h2>
+    <a href="index.html" class="nav-link">
+      <h1>Bonsai Bites</h1>
+    </a>
+    <a href="menu.html" class="nav-link">
+      <h2 class="nav-link-h2">Menu</h2>
+    </a>
+    <a href="menu.html" class="nav-icon"><i class="bi bi-bag"></i></a>
+  </div>
+
+  <!-- SIDE MENU -->
+
+  <div id="side-menu" class="">
+    <div>
+      <a href="#order-banner" class="side-menu-txt">
+        <h1 class="side-menu-h">Select Dishes</h1>
+      </a>
+    </div>
+    <div>
+      <a href="#order-display" class="side-menu-txt">
+        <h1 class="side-menu-h">My Orders</h1>
+      </a>
+    </div>
+    <div>
+      <a href="login.html" class="side-menu-txt">
+        <h1 class="side-menu-h">Log In</h1>
+      </a>
+    </div>
+    <div>
+      <a href="#" class="side-menu-txt" onclick="logOut()">
+        <h1 class="side-menu-h">Log Out</h1>
+      </a>
+    </div>
+    <div><i class="bi bi-x-lg" id="x-side-menu" onclick="toggleSideMenu();"></i></div>
+  </div>
+
+  <!--BODY-->
+
+  <div id="order-banner" class="banner">
+    <div>
+      <h1>Order Now</h1>
+    </div>
+  </div>
+
+  <div class="form-div">
+    <h1> Submit Dishes</h1>
+    <form id="order-form" class="order-form">
+      <div class="form-group">
+        <h3>Dish Name</h3>
+        <select class="form-control" id="name-input" name="name">
+        </select>
+      </div>
+      <div class="form-group">
+        <h3>Quantity</h3>
+        <input type="number" class="form-control" id="quantity-input" placeholder="Quantity" name="quantity">
+        <span id="qnt-error">* Field required</span>
+      </div>
+      <button type="submit" class="btn-form">Submit</button>
+    </form>
+  </div>
+
+  <div id="order-display" class="info-card">
+    <h1>- My Orders -</h1>
+    <div>
+      <table id="table-head" class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Image</th>
+            <th scope="col">Name</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price/unit</th>
+            <th scope="col">Configure</th>
+          </tr>
+        </thead>
+        <tbody id="order-table">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- POP UP -->
+  <div id="popup">
+    <div class="content">
+      <h2>Modify your Order:</h2>
+      <h5>Dish Name</h5>
+      <div class="inputBox">
+        <select class="form-control" id="name-edit-input" name="name">
+        </select>
+      </div>
+      <h5>Quantity</h5>
+      <div class="inputBox">
+        <input type="number" class="form-control" id="quantity-edit-input" placeholder="Quantity" name="quantity-edit">
+      </div>
+      <div class="inputBox">
+        <input type="submit" value="Submit" onclick="updateOrder(); popupToggle();">
+      </div>
+    </div>
+    <a class="close" onclick="popupToggle();"><i class="bi bi-x-lg"></i></a>
+  </div>
+
+  <!-- Burbuja del chat -->
+  <div id="chat-bubble" class="chat-bubble">
+    <i class="bi bi-chat-fill" id="chat-icon"></i>
+  </div>
+
+  <div id="chat-content" class="chat-content">
+
+  </div>
+
+  <!--FOOTER-->
+
+  <div id="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">Bonsai Bites</div>
+        <ul>
+          <li><a href="https://www.facebook.com" target="_blank" class="social-links"><i class="bi bi-facebook"></i>
+              Facebook</a></li>
+          <li><a href="https://twitter.com" target="_blank" class="social-links"><i class="bi bi-twitter"></i>
+              Twitter</a></li>
+          <li><a href="https://www.instagram.com" target="_blank" class="social-links"><i class="bi bi-instagram"></i>
+              Instagram</a></li>
+        </ul>
+
+      </div>
+      <div class="footer-section">
+        <div class="footer-logo">Opening Hours</div>
+        <ul>
+          <li>Monday - Friday: 11:00 AM - 10:00 PM</li>
+          <li>Saturday - Sunday: 9:00 AM - 11:00 PM</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <div class="footer-logo">Find Us</div>
+        <ul>
+          <li>123 Main Street</li>
+          <li>City, State ZIP</li>
+          <li>Email: info@yourrestaurant.com</li>
+          <li>Phone: (123) 456-7890</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
