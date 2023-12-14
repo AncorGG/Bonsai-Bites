@@ -21,7 +21,7 @@ function initialize() {
     }
 
     const LOG_DIV = document.getElementById("log-div");
-    if(LOG_DIV != null){
+    if (LOG_DIV != null) {
         LOG_DIV.innerHTML = `<h1>${sessionStorage.getItem("logMessage")}</h1>`;
         setTimeout(() => { window.location.href = "index.html"; }, 3000);
     }
@@ -36,45 +36,6 @@ function openChat() {
     CHAT_BUBBLE.style.backgroundColor = (CHAT_CONTENT.style.display === 'block') ? "#d4a373" : "white";
     const CHAT_ICON = document.getElementById('chat-icon');
     CHAT_ICON.style.color = (CHAT_CONTENT.style.display === 'block') ? "white" : "#d4a373";
-}
-
-function showMessages() {
-    const CHAT_CONTENT = document.getElementById("chat-content");
-    var chatLogHTML = "";
-    logged = sessionStorage.getItem('logged');
-    if (logged == 'true') {
-        for (let i = 0; i < 10; i++) {
-            chatLogHTML += `
-        <div class="message-container">
-        <div class="message-text">
-          <span class="sender-name">Usuario1:</span>
-          <p>Hola, ¿cómo estás? ${i}</p>
-        </div>
-      </div>
-        `;
-        }
-        //Send button container
-        chatLogHTML += `
-    <div class="input-container">
-      <input type="text" placeholder="Write a message">
-    </div>
-      <button class="input-button">Send</button>
-    `;
-    } else {
-        chatLogHTML = `
-        <div class="message-container">
-        <div class="message-text">
-            <span class="sender-name">System:</span>
-            <p>Please, Log in First</p>
-        </div>
-        </div>
-        <div class="input-container">
-        </div>
-        <a href="login.html"><button class="input-button">Log In</button></a>
-        `;
-    }
-
-    CHAT_CONTENT.innerHTML = chatLogHTML;
 }
 
 //LOGIN & REGISTER -----------------------
@@ -124,7 +85,7 @@ function login(event) {
         redirect("You are already log in");
     }
     sessionStorage.setItem('logged', logged);
-    showMessages();
+    sessionStorage.setItem('username', LG_UNAME);
 }
 
 function register(event) {
@@ -161,12 +122,10 @@ function register(event) {
 function logOut() {
     if (sessionStorage.getItem('logged')) {
         sessionStorage.setItem('logged', 'false');
+        sessionStorage.setItem('username', '');
         redirect("logged out succesfully");
     }
-    showMessages();
 }
-
-showMessages();
 initialize();
 
 //LOCAL STORAGE
@@ -183,7 +142,7 @@ function retriveLogFromLocalStorage() {
 
 //Login redirect
 
-function redirect(message){
+function redirect(message) {
     sessionStorage.setItem("logMessage", message);
     window.location.href = "redirect.html";
 }

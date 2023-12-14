@@ -303,7 +303,7 @@ function adjustDessertClass() {
   var dessetCard5 = document.getElementById("dc-5");
 
   var anchoVentana = window.innerWidth;
-
+if(dessetCard3 != null){
   if (anchoVentana > 992 && anchoVentana < 1200) {
     dessetCard4.classList.remove("-r");
     dessetCard4.classList.add("-l");
@@ -323,6 +323,7 @@ function adjustDessertClass() {
     dessetCard5.classList.remove("-r");
     dessetCard5.classList.add("-l");
   }
+}
 }
 window.addEventListener("load", adjustDessertClass);
 window.addEventListener("resize", adjustDessertClass);
