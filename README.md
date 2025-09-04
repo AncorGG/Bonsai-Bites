@@ -6,6 +6,7 @@
 
 <h4><i>If you like this Repo, Please click the</i> :star:</h4>
 
+<br>
 
 <h4>Visit the live page here!</h4>
 <h5>https://ancorgg.github.io/Bonsai-Bites/index.html</h5>
