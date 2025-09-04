@@ -42,7 +42,7 @@ Get started with our project by following these simple steps:
 
 1. Clone the repository:
    ```sh
-   git clone [https://github.com/yourusername/bonsai-bits.git](https://github.com/AncorGG/Bonsai-Bites)
+   git clone https://github.com/yourusername/bonsai-bits.git
    ```
 
 ### Tools
